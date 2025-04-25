@@ -19,4 +19,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/transactions', [TransactionApiController::class, 'store']);
+//Route::post('/transactions', [TransactionApiController::class, 'store']);
+Route::prefix('transactions')->group(function () {
+    Route::post('/', [TransactionApiController::class, 'store']);
+    // Future routes could go here
+});

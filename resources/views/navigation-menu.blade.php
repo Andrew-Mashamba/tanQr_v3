@@ -1,13 +1,13 @@
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="mx-auto">
-        <div class="flex justify-between h-16">
+        <div class="flex justify-between h-20">
 
                 <!-- Logo -->
                 <div class="flex">
                     <!-- Logo -->
-                    <div class="flex items-center">
-                        <img class="h-16" src="{{ asset('img/logo.png') }}" >
+                    <div class="flex items-center ml-4">
+                        <img class="h-16" src="{{ asset('/images/finca.png') }}" >
                     </div>
 
                     <!-- Navigation Links -->
