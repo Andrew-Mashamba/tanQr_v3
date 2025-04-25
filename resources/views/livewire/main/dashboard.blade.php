@@ -210,7 +210,7 @@
                     datasets: [{
                         label: 'First dataset',
                         data: [{{$this->succesifulTransactions}}, {{$this->failedTransactions}}, {{$this->suspectTransactions}}],
-                        backgroundColor: ['#FCD317', '#191E21', '#ededed']
+                        backgroundColor: ['#AF0A35', '#003E7E', '#ededed']
                     }]
                 },
                 options: {}
@@ -226,12 +226,12 @@
                         datasets: [
                             {
                                 label: "Successful Transactions",
-                                backgroundColor: "#FCD317",
+                                backgroundColor: "#AF0A35",
                                 data: [150, 200, 250, 300, 350, 400, 450, 500, 450, 600, 650, 100, 750, 800, 850, 500, 950, 1000, 100, 110, 150, 1200, 1250, 1300, 130, 1400, 150, 1500, 1550, 1600]
                             },
                             {
                                 label: "Failed Transactions",
-                                backgroundColor: "#191E21",
+                                backgroundColor: "#003E7E",
                                 data: [900, 600, 700, 400, 90, 600, 110, 1200, 130, 100, 700, 100, 100, 180, 1900, 200, 200, 220, 2300, 2100, 940, 600, 700, 200, 290, 1000, 100, 200, 300, 400]
                             }
                         ]

@@ -160,11 +160,11 @@
         @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
         .custom-red-bg {
-            background-color: #FBD400;
+            background-color: #AF0A35;
         }
 
         .custom-red-text {
-            color: #FBD400;
+            color: #AF0A35;
         }
         .bg-custom {
             /*background-image: url('http://96.46.181.165/projects/School/public/images/bg.svg');*/
@@ -175,7 +175,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            background-color: #FBD400; /* Optional background color */
+            background-color: #AF0A35; /* Optional background color */
             color: white; /* Optional text color */
             padding: 10px; /* Optional padding */
             text-align: center; /* Optional text alignment */
@@ -201,7 +201,7 @@
                     <div class="flex items-start justify-between h-25 px-4 sm:px-6 lg:px-8">
                         <!-- Logo -->
                         <a class="block mt-2 flex items-center" href="{{ route('login') }}">
-                            <img class="mt-1" src="{{ asset('/images/letshego.png') }}"
+                            <img class="mt-1" src="{{ asset('/images/finca.png') }}"
                                  height="200" width="200" alt="Authentication decoration" />
                         </a>
                     </div>
@@ -269,7 +269,7 @@
                             <svg class="w-3.5 h-3.5 mr-2 custom-red-text dark:text-green-400 flex-shrink-0 bounce-top-icons" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                             </svg>
-                            iSALE Investment Limited
+                            Moira Limited
                         </li>
                         <li class="flex items-center">
                             <svg class="w-3.5 h-3.5 mr-2 custom-red-text dark:text-gray-400 flex-shrink-0 bounce-top-icons" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -280,7 +280,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="text-gray-500 no-underline hover:no-underline" href="#">&copy; Isale 2023</a>
+                <a class="text-gray-500 no-underline hover:no-underline" href="#">&copy; Moira 2023</a>
             </div>
 
         </div>
@@ -299,10 +299,10 @@
                     <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                 </defs>
                 <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#FBD400" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#AF0A35" />
                     <use xlink:href="#gentle-wave" x="48" y="5" fill="#FFFFFF" >  </use>
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#000000" />
-                    <use xlink:href="#gentle-wave" x="48" y="9" fill="#000000" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#003E7E" />
+                    <use xlink:href="#gentle-wave" x="48" y="9" fill="#003E7E" />
                 </g>
             </svg>
         </div>
