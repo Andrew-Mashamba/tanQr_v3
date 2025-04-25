@@ -249,7 +249,7 @@
                                 </div>
 
                                 <div class="h-4 w-full mb-4 justify-center text-center">
-                                    <span class="font-bold text-2xl text-center text-[#1F3251] mt-4 mb-4 " style="text-align: center">{{$this->merchant_name}}</span>
+                                    <span class="font-bold text-2xl text-center text-[#1F3251] mt-4 mb-4 " style="text-align: center">{{$this->business_name}}</span>
                                 </div>
 
 

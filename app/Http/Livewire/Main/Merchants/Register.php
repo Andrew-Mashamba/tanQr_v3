@@ -131,7 +131,7 @@ class Register extends Component
         $this->acquirer_id = '104203';
         $mrch = Merchant::orderBy('id', 'desc')->first();
         if($mrch) {
-            $lastId = $mrch->id;
+            $lastId = $mrch->id + 1;
         } else {
             $lastId = 1;
         }
@@ -156,7 +156,7 @@ class Register extends Component
         $mcc = '5204'.$this->selectedSubcategory;
         $currency = '5303'.$this->country_currency;
         $countryCode = '5802'.$this->country_code;
-        $merchantName = '5914'.str_pad(substr(strtoupper($this->merchant_name), 0, 14), 14);
+        $merchantName = '5914'.str_pad(substr(strtoupper($this->business_name), 0, 14), 14);
         $city = '6006'.str_pad(substr($this->merchant_city, 0, 6), 6);
         $postcode = '610500000';
         //Skip
@@ -222,7 +222,7 @@ class Register extends Component
         // Output path for the generated PDF
         $outputPath = public_path('pdf/generated.pdf');
 
-        $merchant_name = strtoupper($this->merchant_name);
+        $merchant_name = strtoupper($this->business_name);
         $qrCode = $this->qrCode;
         $merchant_id = $this->merchant_id;
 
