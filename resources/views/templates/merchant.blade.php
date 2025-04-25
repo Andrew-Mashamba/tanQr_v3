@@ -305,7 +305,7 @@
 <div class="container mx-auto p-8 bg-white shadow-lg rounded-lg
                         relative body-text" style="width: 650px;
                         height: 890px; max-width: 100%;
-                        background-image: url('{{ asset('images/bgx.png') }}');
+                        background-image: url('{{ asset('images/finx.png') }}');
                         background-size: cover; background-position: center;">
 
     <img id="logo" class="rounded-lg absolute top-2 right-2 w-60 mt-4 mr-4" src="{{ asset('images/logoletx.png') }}" alt="Logo Image" />

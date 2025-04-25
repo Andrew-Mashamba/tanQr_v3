@@ -25,7 +25,7 @@
         <x-slot name="content">
 
             <div class="container mx-auto p-8 bg-white shadow-lg rounded-lg
-                        relative" style="width: 794px; height: 922px; max-width: 100%; background-image: url('{{ asset('images/bgx.png') }}'); background-size: cover; background-position: center;">
+                        relative" style="width: 794px; height: 922px; max-width: 100%; background-image: url('{{ asset('images/finx.png') }}'); background-size: cover; background-position: center;">
 
                 <img id="logo" class="rounded-lg absolute top-2 right-2 w-60 mt-4 mr-4" src="{{ asset('images/logoletx.png') }}" alt="Logo Image" />
 
