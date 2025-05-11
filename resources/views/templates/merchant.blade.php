@@ -154,7 +154,7 @@
     }
 
     .right-2 {
-        right: 0.5rem;
+        right: 13.5rem;
     }
 
     .w-60 {

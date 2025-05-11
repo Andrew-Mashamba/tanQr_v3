@@ -224,38 +224,37 @@
             @if($this->qrCode)
 
 
-                        <div class="container mx-auto p-8 bg-white shadow-lg rounded-lg
-                        relative" style="width: 794px; height: 922px; max-width: 100%; background-image: url('{{ asset('images/finx.png') }}'); background-size: cover; background-position: center;">
+                    <div class="container mx-auto p-8 bg-white shadow-lg rounded-lg relative" 
+     style="width: 794px; height: 922px; max-width: 100%; background-image: url('{{ asset('images/finx.png') }}'); background-size: cover; background-position: center;">
 
-                            <img id="logo" class="rounded-lg absolute top-2 right-2 w-60 mt-4 mr-4" src="{{ asset('images/logoletx.png') }}" alt="Logo Image" />
-
-                            <div id="details" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl p-4 md:mx-0" style="height: 480px">
-
-                            <div class="h-4"></div>
-
-                                <div class="flex justify-center mb-2">
-                                    <img src="data:image/png;base64, {{ $this->qrCode }}" alt="QR code" style="width: 300px">
-                                </div>
-
-                                <div class="flex flex-col space-y-4 py-4 space-y-4">
-                                    <span class="font-bold text-2xl text-center text-[#1F3251]">
-                                        @foreach(str_split($this->merchant_id) as $digit)
-                                            <span class="inline-block pr-2 pl-2 border border-[#1F3251] rounded">
-                                                {{ $digit }}
-                                            </span>
-                                        @endforeach
-                                    </span>
-
-                                </div>
-
-                                <div class="h-4 w-full mb-4 justify-center text-center">
-                                    <span class="font-bold text-2xl text-center text-[#1F3251] mt-4 mb-4 " style="text-align: center">{{$this->business_name}}</span>
-                                </div>
+    <!-- Centered logo image -->
+    <img id="logo" class="rounded-lg absolute left-1/2 transform -translate-x-1/2 w-60 mtx-4 mb-8" 
+         src="{{ asset('images/logoletx.png') }}" alt="Logo Image" />
 
 
-                            </div>
-                        </div>
 
+    <div id="details" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl p-4 md:mx-0" style="height: 480px">
+      
+
+        <div class="flex justify-center mb-2 ">
+            <img src="data:image/png;base64, {{ $this->qrCode }}" alt="QR code" style="width: 300px">
+        </div>
+
+        <div class="flex flex-col space-y-4 py-4 space-y-4">
+            <span class="font-bold text-2xl text-center text-[#1F3251]">
+                @foreach(str_split($this->merchant_id) as $digit)
+                    <span class="inline-block pr-2 pl-2 border border-[#1F3251] rounded">
+                        {{ $digit }}
+                    </span>
+                @endforeach
+            </span>
+        </div>
+
+        <div class="h-4 w-full mb-4 justify-center text-center">
+            <span class="font-bold text-2xl text-center text-[#1F3251] mt-4 mb-4 " style="text-align: center">{{$this->business_name}}</span>
+        </div>
+    </div>
+</div>
 
             @endif
 
